@@ -1,0 +1,12 @@
+<form (ngSubmit)="submit()" [formGroup]="loginForm">
+  <form-input [required]="true" field="firstname" hintLabel="Votre prénom" label="Prénom">
+  </form-input>
+  <form-input [required]="true" field="lastname" hintLabel="Votre nom de famille" label="Nom"></form-input>
+  <form-input [required]="true" field="email" hintLabel="Votre adresse email" label="Email" type="email"></form-input>
+  <form-input field="password"
+          hintLabel="Votre mot de passe doit contenir minimum 8 caractères"
+          label="Mot de passe"
+          [required]="true"
+          type="password"></form-input>
+  <button type="submit" mat-raised-button color="primary">Valider</button>
+</form>

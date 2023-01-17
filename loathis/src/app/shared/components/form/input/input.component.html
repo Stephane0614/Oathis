@@ -1,0 +1,29 @@
+<mat-form-field [hintLabel]="hintLabel"
+        appearance="fill"
+        class="mat-form-field {{formGroupClass}}"
+        [color]="color">
+  <mat-label>{{ label }}</mat-label>
+  <input [formControl]="control"
+          [name]="field"
+          [placeholder]="hintLabel"
+          [required]="required"
+          [type]="type"
+          matInput>
+  <button *ngIf="isPwd" mat-icon-button
+          matSuffix
+          (click)="viewPwd()"
+          [attr.aria-label]="'Voir le mot de passe'"
+          [attr.aria-pressed]="hide">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </button>
+  <button *ngIf="search" mat-icon-button matSuffix [attr.aria-label]="'Rechercher'"
+ [attr.aria-pressed]="hide" type="submit">
+  <mat-icon>search</mat-icon>
+</button>
+  <mat-icon *ngIf="iconPrefix" matPrefix>{{ iconPrefix }}</mat-icon>
+  <mat-icon *ngIf="iconSuffix" matSuffix>{{ iconSuffix }}</mat-icon>
+  <mat-hint *ngIf="help">{{ help }}</mat-hint>
+  <mat-error *ngIf="control?.invalid">
+    Le champ {{ label | lowercase }} est invalide.
+  </mat-error>
+</mat-form-field>

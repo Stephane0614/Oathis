@@ -1,0 +1,39 @@
+h1{
+    padding-left: 1.5em;
+    font-family: 'Roboto';
+}
+
+app-promotion{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 769px){
+
+    h1{
+        text-align: center;
+    }
+
+    app-promotion{
+        flex-wrap: wrap;
+        gap: 15%;
+    }
+}
+
+
+@media screen and (max-width: 426px){
+
+    h1{
+        text-align: center;
+    }
+
+    app-carrousel{
+        display: none;
+    }
+
+    app-promotion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

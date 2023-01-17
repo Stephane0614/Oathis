@@ -1,0 +1,43 @@
+
+.universMicrosoft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+}
+.consoles{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.consolesNeuves{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+.consolesOccasion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+}
+.jeux{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.jeuxNeufs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+.jeuxOccasions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}

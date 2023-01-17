@@ -1,0 +1,27 @@
+<mat-form-field [hintLabel]="hintLabel"
+        appearance="fill"
+        class="mat-form-field" [ngClass]="{formGroupClass: formGroupClass}"
+        [color]="color">
+  <mat-label>{{ label }}</mat-label>
+  <input [formControl]="control"
+          [name]="field"
+          [placeholder]="dateFormat"
+          [required]="required"
+          matInput [matDatepicker]="datepicker">
+  <mat-hint>Entrez la date au format {{ dateFormat }}</mat-hint>
+  <mat-datepicker-toggle
+          [attr.aria-controls]="datepicker"
+          matIconSuffix
+          [for]="datepicker"
+          aria-label="Sélectionner la date">
+  </mat-datepicker-toggle>
+  <mat-datepicker #datepicker [color]="colorCalendar" [dateClass]="dateClass">
+    <mat-datepicker-actions>
+      <button mat-button matDatepickerCancel>Annuler</button>
+      <button mat-raised-button color="primary" matDatepickerApply>Appliquer</button>
+    </mat-datepicker-actions>
+  </mat-datepicker>
+  <mat-error *ngIf="control?.invalid">
+    Le champ {{ label | lowercase }} est invalide.
+  </mat-error>
+</mat-form-field>

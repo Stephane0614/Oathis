@@ -1,0 +1,25 @@
+<div class="sidebar">
+  <nav [ngClass]="{'visible' : toggle}" class="menu">
+    <ul class="menu-list">
+      <li routerLink="" aria-label="L'Oathis, page d'accueil">
+        <img alt="Page d'accueil"
+                class="logo"
+                src="assets/page_accueil/oathis-logo-removebg-preview.png" />
+      </li>
+      <li class="navSony" routerLink="sony">Sony</li>
+      <li class="navNintendo" routerLink="nintendo">Nintendo</li>
+      <li class="navMicrosoft" routerLink="microsoft">Microsoft</li>
+    </ul>
+  </nav>
+
+  <div (click)="myFunction()" class="icon">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="menu_right">
+    <ul>
+      <li><img alt="panier" src="assets/page_accueil/paniers.png" alt="votre panier"></li>
+      <li><img alt="inscripton" src="assets/page_accueil/utilisateur.png" alt="inscrivez-vous"></li>
+    </ul>
+  </div>
+</div> 

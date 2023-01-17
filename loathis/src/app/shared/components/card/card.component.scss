@@ -1,0 +1,73 @@
+
+.card {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo {
+  width: 200px;
+}
+
+.nintendo {
+  height: 100px;
+  width: 100px;
+}
+
+.nintendo2 {
+  width: 80px;
+}
+
+.promos {
+  width: 250px;
+}
+
+.carte_promo {
+  height: 500px;
+  width: 300px;
+}
+
+.xboxCard {
+
+  width: 250px;
+  height: 250px;
+}
+
+.carte_sony {
+  height: 300px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.image_sony {
+  width: 100px;
+  margin-left: 7em;
+  margin-bottom: 2.5em;
+  margin-top: 2em;
+}
+
+.carte_nintendo {
+  width: 250px;
+}
+
+
+@media screen and (max-width: 769px) {
+
+  .carte_promo {
+    height: 300px;
+    width: 150px;
+  }
+
+  .promo {
+    width: 50px;
+  }
+
+  .promos {
+    width: 50px;
+  }
+
+  mat-card-title {
+    font-size: smaller;
+  }
+}

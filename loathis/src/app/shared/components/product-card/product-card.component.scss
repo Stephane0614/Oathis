@@ -1,0 +1,16 @@
+.product-card{
+    width: 20%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+        h3{
+            color: black;
+        }
+        .price{
+            font: bold;
+        }
+}

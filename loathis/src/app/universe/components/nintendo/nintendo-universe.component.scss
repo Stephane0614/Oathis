@@ -1,0 +1,27 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.cards-item{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 426px){
+
+    h1{
+        text-align: center;
+    }
+    .cards{
+        column-gap: 100px;
+        margin-left: 4em;
+
+    }
+}

@@ -1,0 +1,6 @@
+<mat-checkbox [formControl]="control" [aria-label]="label" [disabled]="disabled" [name]="field" [required]="required">
+  {{ label }}
+</mat-checkbox>
+<mat-error *ngIf="control?.invalid">
+  Le champ {{ label | lowercase }} est invalide.
+</mat-error>

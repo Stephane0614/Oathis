@@ -1,0 +1,13 @@
+<label [for]="groupName">{{ groupLabel }}</label>
+<mat-radio-group
+        [attr.aria-labelledby]="groupName" [formControl]="control"
+        class="example-radio-group">
+  <ul *ngIf="values">
+    <li *ngFor="let value of values">
+      <mat-radio-button class="example-radio-button" [value]="value">
+        {{ value }}
+      </mat-radio-button>
+    </li>
+  </ul>
+</mat-radio-group>
+<mat-hint>{{ help }}</mat-hint>
